@@ -18,19 +18,17 @@ public class LinkedList {
     }
 
     public void addToHead(Node node) {
-        Node newHead = node;
         if (this.head != null){
             Node currentHead = this.head;
-            newHead.setNext(currentHead);
-            this.head = newHead;
-    }else{
-        this.head = newHead;
-        this.tail = this.head;
+            node.setNext(currentHead);
+            this.head = node;
+        }else{
+            this.head = node;
+            this.tail = this.head;
         }
     }
 
     public void addToTail(Node node) throws NullPointerException{
-        Node newTail = node;
         if (this.head == null){
             throw new NullPointerException("empty list cannot have a node!");
         }
@@ -42,4 +40,12 @@ public class LinkedList {
         this.tail = node;
 
     }
+
+    public void add(Node node) {
+        if (this.head == null){
+            addToHead(node);
+        } else {
+            addToTail(node);
+            }
+        }
 }

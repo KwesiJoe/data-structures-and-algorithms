@@ -30,4 +30,12 @@ public class Node <T> {
         }
         return this.next;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "data=" + data +
+                '}';
+    }
 }
+
