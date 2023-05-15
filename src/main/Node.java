@@ -63,7 +63,7 @@ public class Node<T> {
      * This method returns a boolean indicating if the current 
      * node has a next node. It returns true if the next node is not 
      * null, and false otherwise.
-     * @return
+     * @return bool
      */
     public boolean hasNext(){
         return !(this.getNext() == null);
