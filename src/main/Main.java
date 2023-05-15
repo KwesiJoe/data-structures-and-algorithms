@@ -1,3 +1,6 @@
+/**
+ * Main file of Linked List implentation in Java
+ */
 package main;
 
 public class Main {
