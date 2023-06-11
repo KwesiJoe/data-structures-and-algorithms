@@ -1,6 +1,5 @@
 package main;
 
-
 //Declaration of LinkedList public class
 public class LinkedList {
     private Node head; // declare two private Node namely head & tail
